@@ -7,15 +7,31 @@ Des événements sont envoyés à GA4 conformément au plan de taggage plus bas.
 
 ## Plan de taggage 
 
-| Étape                             | Objectif                                                                 | Nom de la balise                   | Déclencheur                          | Variables / Exemple dataLayer                                                                                         |
-|----------------------------------|--------------------------------------------------------------------------|----------------------------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| **Ouverture (clic)**              | Suivre le nombre d’utilisateurs qui interagissent via le chatbot (bulle) | GA4 - Event - elaia_open         | Clic sur la bulle                   | `dataLayer.push({'event':'elaia_open'});`                                                                             |
-| **Lancement d’une conversation** | Suivre quand un utilisateur lance une conversation                       | GA4 - Event - elaia_conversation_started | Clic sur le bouton "Discuter maintenant" | `dataLayer.push({'event':'elaia_conversation_started'});`                                                             |
-| **Choix du contact**              | Connaître le nombre de demandes de contact et la méthode utilisée        | GA4 - Event - elaia_contact      | Clic sur un bouton de contact      | `dataLayer.push({'event': 'elaia_contact', 'contact_method': 'email'});` (contact_method peut être 'email', 'whatsapp', 'messenger') |
-| **Interactions avec la FAQ**     | Compter les interactions FAQ et identifier les questions les plus consultées | GA4 - Event - elaia_faq          | Clic sur une section FAQ déroulée  | ```dataLayer.push({<br>  'event': 'elaia_faq',<br>  'index': 0,<br>  'question': 'Quelles sont les horaires de réception?'<br>});``` |
-| **Retour à l’accueil depuis la messagerie** | Compter le nombre de retours à l'accueil depuis la messagerie             | GA4 - Event - elaia_back         | Clic sur "Retour à l’accueil"      | `dataLayer.push({'event':'elaia_back'});`                                                                              |
+| Étape                             | Objectif                                                                 | Nom de la balise                   |
+|----------------------------------|--------------------------------------------------------------------------|----------------------------------|
+| **Ouverture (clic)**              | Suivre le nombre d’utilisateurs qui interagissent via le chatbot (bulle) | GA4 - Event - elaia_open         |
+| **Lancement d’une conversation** | Suivre quand un utilisateur lance une conversation                       | GA4 - Event - elaia_conversation_started |
+| **Choix du contact**              | Connaître le nombre de demandes de contact et la méthode utilisée        | GA4 - Event - elaia_contact      |
+| **Interactions avec la FAQ**     | Compter les interactions FAQ et identifier les questions les plus consultées | GA4 - Event - elaia_faq          |
+| **Retour à l’accueil depuis la messagerie** | Compter le nombre de retours à l'accueil depuis la messagerie             | GA4 - Event - elaia_back         |
 
 
 ## Instructions d'installation 
 
-1. Télécharger le fichier JSON [Elaia]([url](https://github.com/gazanowsky/elaia-chatbot-gtm-template/blob/main/elaia-gtm-template.json))
+#### 1. Télécharger le fichier ([elaia-gtm-template.json](https://github.com/gazanowsky/elaia-chatbot-gtm-template/blob/main/elaia-gtm-template.json))
+
+#### 2. Aller sur https://wwww.google.tagmanager.com
+
+#### 3. Séléctionner l'onglet **Admin** > **Importer le container**
+ 
+   <img width="1849" height="867" alt="image" src="https://github.com/user-attachments/assets/1d803f1f-a169-45f5-8629-46ae80e2eafe" />
+
+#### 4. Importer le fichier téléchargé puis cochez **Fusionner** et **Renommer les balises, déclencheurs et variables générant des conflits**
+
+   <img width="1187" height="913" alt="image" src="https://github.com/user-attachments/assets/a89feb96-963a-49f3-beac-1407bb4f692d" />
+
+#### 5. Indiquer l'ID de mesure GA4 dans la balise **GA4 - Chatbot Events (Elaia)**
+
+<img width="1187" height="913" alt="image" src="https://github.com/user-attachments/assets/06c1bdcb-ead4-44e5-8983-35c3bcac3bc3" />
+
+
