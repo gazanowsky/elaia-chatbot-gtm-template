@@ -1,0 +1,34 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2025-07-30 16:08:03",
+  "containerVersion": {
+    "container": {
+      "name": "website",
+      "usageContext": ["WEB"],
+      "features": {
+        "supportUserPermissions": true,
+        "supportEnvironments": true,
+        "supportWorkspaces": true,
+        ...
+      }
+    },
+    "tag": [
+      {
+        "name": "GA4 - Chatbot Events (Elaia)",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "measurementIdOverride",
+            "value": "G-XXXXXXXXXX"
+          },
+          ...
+        ],
+        "firingTriggerId": ["52"]
+      }
+    ],
+    "trigger": [...],
+    "variable": [...],
+    "builtInVariable": [...]
+  }
+}
