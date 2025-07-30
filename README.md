@@ -11,8 +11,8 @@ Des événements sont envoyés à GA4 conformément au plan de taggage plus bas.
 |----------------------------------|--------------------------------------------------------------------------|----------------------------------|
 | **Ouverture (clic)**              | Suivre le nombre d’utilisateurs qui interagissent via le chatbot (bulle) | elaia_open         |
 | **Lancement d’une conversation** | Suivre quand un utilisateur lance une conversation                       | elaia_conversation_started |
-| **Choix du contact**              | Connaître le nombre de demandes de contact et la méthode utilisée        | Event - elaia_contact      |
-| **Interactions avec la FAQ**     | Compter les interactions FAQ et identifier les questions les plus consultées | Event - elaia_faq          |
+| **Choix du contact**              | Connaître le nombre de demandes de contact et la méthode utilisée        | elaia_contact      |
+| **Interactions avec la FAQ**     | Compter les interactions FAQ et identifier les questions les plus consultées | elaia_faq          |
 | **Retour à l’accueil depuis la messagerie** | Compter le nombre de retours à l'accueil depuis la messagerie             | elaia_back         |
 
 
