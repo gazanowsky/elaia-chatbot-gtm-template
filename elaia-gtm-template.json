@@ -8,13 +8,15 @@
         "containerVersionId": "0",
         "container": {
             "path": "accounts/6004415538/containers/48660114",
-            "accountId": "6004415538",
-            "containerId": "48660114",
-            "name": "website",
+            "accountId": "0123456789",
+            "containerId": "0123456",
+            "name": "website.com",
             "publicId": "GTM-XXXXXXX",
             "usageContext": [
                 "WEB"
             ],
+            "fingerprint": "1626701187856",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6004415538/containers/48660114/workspaces?apiLink=container",
             "features": {
                 "supportUserPermissions": true,
                 "supportEnvironments": true,
@@ -32,7 +34,7 @@
                 "supportTransformations": false
             },
             "tagIds": [
-                "GTM-XXXXXXX"
+                "GTM-0123456"
             ]
         },
         "tag": [
@@ -107,7 +109,7 @@
                     {
                         "type": "TEMPLATE",
                         "key": "measurementIdOverride",
-                        "value": "G-XXXXXXXXXX"
+                        "value": "G-012345678"
                     }
                 ],
                 "fingerprint": "1753891361687",
