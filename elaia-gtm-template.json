@@ -2,8 +2,16 @@
     "exportFormatVersion": 2,
     "exportTime": "2025-07-30 16:27:27",
     "containerVersion": {
+        "path": "accounts/6004415538/containers/48660114/versions/0",
+        "accountId": "6004415538",
+        "containerId": "48660114",
+        "containerVersionId": "0",
         "container": {
+            "path": "accounts/6004415538/containers/48660114",
+            "accountId": "6004415538",
+            "containerId": "48660114",
             "name": "website",
+            "publicId": "GTM-XXXXXXX",
             "usageContext": [
                 "WEB"
             ],
@@ -23,6 +31,8 @@
                 "supportZones": true,
                 "supportTransformations": false
             },
+            "tagIds": [
+                "GTM-XXXXXXX"
             ]
         },
         "tag": [
@@ -97,7 +107,7 @@
                     {
                         "type": "TEMPLATE",
                         "key": "measurementIdOverride",
-                        "value": "G-58PMG5ENZ2"
+                        "value": "G-XXXXXXXXXX"
                     }
                 ],
                 "fingerprint": "1753891361687",
