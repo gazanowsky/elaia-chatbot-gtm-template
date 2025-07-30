@@ -1,206 +1,226 @@
 {
-  "exportFormatVersion": 2,
-  "exportTime": "2025-07-30 16:08:03",
-  "containerVersion": {
-    "container": {
-      "name": "MonSiteWeb",
-      "usageContext": [
-        "WEB"
-      ],
-      "features": {
-        "supportUserPermissions": true,
-        "supportEnvironments": true,
-        "supportWorkspaces": true,
-        "supportGtagConfigs": false,
-        "supportBuiltInVariables": true,
-        "supportClients": false,
-        "supportFolders": true,
-        "supportTags": true,
-        "supportTemplates": true,
-        "supportTriggers": true,
-        "supportVariables": true,
-        "supportVersions": true,
-        "supportZones": true,
-        "supportTransformations": false
-      }
-    },
-    "tag": [
-      {
-        "name": "GA4 - Chatbot Events (Elaia)",
-        "type": "gaawe",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "sendEcommerceData",
-            "value": "false"
-          },
-          {
-            "type": "LIST",
-            "key": "eventSettingsTable",
-            "list": [
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "contact_method"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - contact_method (Elaia)}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "index"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - index (Elaia)}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "question"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - question (Elaia)}}"
-                  }
-                ]
-              }
+    "exportFormatVersion": 2,
+    "exportTime": "2025-07-30 16:27:27",
+    "containerVersion": {
+        "container": {
+            "name": "website",
+            "usageContext": [
+                "WEB"
+            ],
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            }
             ]
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventName",
-            "value": "{{Event}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "measurementIdOverride",
-            "value": "G-XXXXXXXXXX"
-          }
-        ],
-        "firingTriggerId": [
-          "52"
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
         },
-        "consentSettings": {
-          "consentStatus": "NOT_SET"
-        }
-      }
-    ],
-    "trigger": [
-      {
-        "name": "CE - Chatbot Events (Elaia)",
-        "type": "CUSTOM_EVENT",
-        "customEventFilter": [
-          {
-            "type": "MATCH_REGEX",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{_event}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": ".*elaia.*"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "variable": [
-      {
-        "name": "DLV - contact_method (Elaia)",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "contact_method"
-          }
-        ]
-      },
-      {
-        "name": "DLV - index (Elaia)",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "index"
-          }
-        ]
-      },
-      {
-        "name": "DLV - question (Elaia)",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "question"
-          }
-        ]
-      }
-    ],
-    "builtInVariable": [
-      {
-        "type": "EVENT",
-        "name": "Event"
-      }
-    ]
-  }
+        "tag": [
+            {
+                "accountId": "6004415538",
+                "containerId": "48660114",
+                "tagId": "53",
+                "name": "GA4 - Chatbot Events (Elaia)",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "contact_method"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - contact_method (Elaia)}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "index"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - index (Elaia)}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "question"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - question (Elaia)}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "{{Event}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-58PMG5ENZ2"
+                    }
+                ],
+                "fingerprint": "1753891361687",
+                "firingTriggerId": [
+                    "52"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6004415538",
+                "containerId": "48660114",
+                "triggerId": "52",
+                "name": "CE - Chatbot Events (Elaia)",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": ".*elaia.*"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1753890939462"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6004415538",
+                "containerId": "48660114",
+                "variableId": "54",
+                "name": "DLV - contact_method (Elaia)",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "contact_method"
+                    }
+                ],
+                "fingerprint": "1753891277049",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6004415538",
+                "containerId": "48660114",
+                "variableId": "55",
+                "name": "DLV - index (Elaia)",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "index"
+                    }
+                ],
+                "fingerprint": "1753891334863",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6004415538",
+                "containerId": "48660114",
+                "variableId": "56",
+                "name": "DLV - question (Elaia)",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "question"
+                    }
+                ],
+                "fingerprint": "1753891357929",
+                "formatValue": {}
+            }
+        ],
+        "fingerprint": "1753892847675",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6004415538/containers/48660114/versions/0?apiLink=version"
+    }
 }
