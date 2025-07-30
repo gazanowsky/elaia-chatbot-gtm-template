@@ -22,7 +22,7 @@
                 "supportVersions": true,
                 "supportZones": true,
                 "supportTransformations": false
-            }
+            },
             ]
         },
         "tag": [
